@@ -1,0 +1,188 @@
+/**********Font********/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+
+/*----------------------------
+            Common Style
+------------------------------*/
+
+body {
+    font-family: font-family: 'Poppins', sans-serif;
+    ;
+    margin: 0;
+}
+
+
+/*----------------------------
+            Header Style
+------------------------------*/
+
+.starting {
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 677px;
+    width: 100%;
+}
+
+.title {
+    width: 485px;
+}
+
+.head-title {
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+
+.fa-arrow-right {
+    padding-left: 8px;
+}
+
+.title-img img {
+    width: 556px;
+    height: 400px;
+    margin-left: 102px;
+}
+
+
+/*----------------------------
+    Header Hover animation 
+------------------------------*/
+
+.title-img img:hover {
+    transform: scale(1.2) skew(20deg) rotate(360deg);
+    transition: transform 3s ease-in-out;
+}
+
+.head-title:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition: transform 2s;
+}
+
+
+/*----------------------------
+    Player Blog stylesheet
+------------------------------*/
+
+.players {
+    display: flex;
+    justify-content: center;
+}
+
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    align-items: center;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    margin-top: 70px;
+    box-shadow: 5px 5px 5px 5px antiquewhite;
+    border: 5px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+}
+
+.player-name {
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 16px;
+}
+
+.player-info {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+
+/*----------------------------
+    Highlights Part
+------------------------------*/
+
+.highlights {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 165px;
+}
+
+.text-part {
+    width: 40%;
+}
+
+.text-part h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.text-part p {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #6C6C6C;
+}
+
+.text-part a {
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+
+.highlights-img img {
+    width: 567px;
+    height: 427px;
+    margin-left: 66px;
+}
+
+
+/*----------------------------
+    Footer Part
+------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 158px;
+}
+
+.last {
+    width: 483px;
+    height: 213px;
+}
+
+.football-img img {
+    width: 483px;
+    height: 110px;
+}
+
+.icons {
+    color: #969BAB;
+    font-size: 32px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 18px;
+    text-align: center;
+}
