@@ -122,6 +122,7 @@ body {
     width: 70%;
     margin-left: 20%;
     margin-top: 165px;
+    position: relative;
 }
 
 .text-part {
@@ -148,9 +149,20 @@ body {
 }
 
 .highlights-img img {
+    display: none;
     width: 567px;
     height: 427px;
     margin-left: 66px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    left: 600px;
+    top: 20px;
+    bottom: 40px;
+    width: 60%;
+    height: 100%;
+    border: none;
 }
 
 
@@ -276,6 +288,10 @@ highlights For Phone
         height: 248px;
         margin-top: 30px;
         padding-right: 130px;
+        display: block;
+    }
+    .responsive-iframe {
+        display: none;
     }
     /*----------------------------
  Footer Responsive For Phone
@@ -304,7 +320,7 @@ highlights For Phone
 
 @media only screen and (min-width:688px) and (max-width:992px) {
     /*----------------------------
- Header Responsive For Tab and Ipad
+ HeaderResponsive For Tab and Ipad
 ------------------------------*/
     .starting {
         flex-direction: column;
@@ -384,10 +400,14 @@ Highlights Responsive For Tab and Ipad
         text-align: justify;
     }
     .highlights-img img {
-        width: 380px;
-        height: 248px;
+        width: 450px;
+        height: 300px;
         margin-top: 30px;
-        padding-right: 130px;
+        padding-right: 150px;
+        display: block;
+    }
+    .responsive-iframe {
+        display: none;
     }
     /*----------------------------
 Footer Responsive For Tab and Ipad
