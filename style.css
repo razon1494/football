@@ -24,6 +24,7 @@ body {
     align-items: center;
     height: 677px;
     width: 100%;
+    padding-left: 20px;
 }
 
 .title {
@@ -122,10 +123,29 @@ body {
     width: 70%;
     margin-left: 20%;
     margin-top: 165px;
+    position: relative;
 }
 
 .text-part {
     width: 40%;
+    height: 350px;
+    border-radius: 10px;
+    transition: 2s ease;
+    padding-left: 1%;
+}
+
+.text-part:hover {
+    background-color: rgba(240, 230, 140, 0.541);
+    transform: translate(-10%, 00%);
+}
+
+.text-part:hover a {
+    color: white;
+    text-decoration: none;
+    background-color: royalblue;
+    font-size: 18px;
+    padding: 10px 24px;
+    transform: translate(50%);
 }
 
 .text-part h1 {
@@ -145,12 +165,102 @@ body {
     background-color: #E02C6D;
     font-size: 16px;
     padding: 10px 24px;
+    transition: 2s ease;
 }
 
 .highlights-img img {
+    display: none;
     width: 567px;
     height: 427px;
     margin-left: 66px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 20px;
+    padding-left: 50px;
+    bottom: 40px;
+    width: 45%;
+    height: 90%;
+    border: none;
+}
+
+
+/*----------------------------
+    Animation Bouncing Ball
+------------------------------*/
+
+@keyframes bouncing {
+    0% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(60deg);
+    }
+    10% {
+        top: 130px;
+        left: 20%;
+        transform: rotate(120deg);
+    }
+    20% {
+        top: 0px;
+        left: 40%;
+        transform: rotate(180deg);
+    }
+    30% {
+        top: 130px;
+        left: 60%;
+        transform: rotate(240deg);
+    }
+    40% {
+        top: 0px;
+        left: 80%;
+        transform: rotate(300deg);
+    }
+    50% {
+        top: 130px;
+        left: 95%;
+        transform: rotate(360deg);
+    }
+    60% {
+        top: 0px;
+        left: 80%;
+        transform: rotate(300deg);
+    }
+    70% {
+        top: 130px;
+        left: 60%;
+        transform: rotate(240deg);
+    }
+    80% {
+        top: 0px;
+        left: 40%;
+        transform: rotate(180deg);
+    }
+    90% {
+        top: 130px;
+        left: 20%;
+        transform: rotate(120deg);
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(60deg);
+    }
+}
+
+.bouncing-ball {
+    width: 62%;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.ball img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: bouncing 8s linear 0s infinite alternate;
+    animation-play-state: running;
 }
 
 
@@ -163,7 +273,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin-top: 158px;
+    margin-top: 100px;
 }
 
 .last {
@@ -177,9 +287,13 @@ footer {
 }
 
 .icons {
+    text-align: center;
+}
+
+.icons a {
     color: #969BAB;
     font-size: 32px;
-    text-align: center;
+    margin-left: 15px;
 }
 
 .copyright {
@@ -240,7 +354,7 @@ footer {
     .player {
         width: 330px;
         height: 474px;
-        margin-left: 15px;
+        margin-left: 75px;
         margin-top: 24px;
     }
     .player-list {
@@ -261,8 +375,8 @@ highlights For Phone
         margin-top: 60px;
     }
     .text-part {
-        width: 65%;
-        padding-right: 30px;
+        width: 80%;
+        height: 350px;
     }
     .text-part h1 {
         font-size: 30px;
@@ -271,11 +385,19 @@ highlights For Phone
         padding-bottom: 30px;
         text-align: justify;
     }
+    .text-part:hover {
+        background-color: rgba(0, 0, 0, 0);
+        transform: translate(10%, -10%);
+    }
     .highlights-img img {
         width: 70%;
         height: 248px;
-        margin-top: 30px;
-        padding-right: 130px;
+        margin-top: 40px;
+        padding-right: 110px;
+        display: block;
+    }
+    .responsive-iframe {
+        display: none;
     }
     /*----------------------------
  Footer Responsive For Phone
@@ -304,7 +426,7 @@ highlights For Phone
 
 @media only screen and (min-width:688px) and (max-width:992px) {
     /*----------------------------
- Header Responsive For Tab and Ipad
+ HeaderResponsive For Tab and Ipad
 ------------------------------*/
     .starting {
         flex-direction: column;
@@ -373,8 +495,13 @@ Highlights Responsive For Tab and Ipad
         margin-top: 60px;
     }
     .text-part {
-        width: 65%;
+        width: 75%;
         padding-right: 30px;
+        height: 280px;
+    }
+    .text-part:hover {
+        background-color: rgba(156, 107, 28, 0.329);
+        transform: translate(10%, -10%);
     }
     .text-part h1 {
         font-size: 30px;
@@ -384,10 +511,14 @@ Highlights Responsive For Tab and Ipad
         text-align: justify;
     }
     .highlights-img img {
-        width: 380px;
-        height: 248px;
-        margin-top: 30px;
-        padding-right: 130px;
+        width: 450px;
+        height: 300px;
+        margin-top: 00px;
+        padding-right: 150px;
+        display: block;
+    }
+    .responsive-iframe {
+        display: none;
     }
     /*----------------------------
 Footer Responsive For Tab and Ipad
