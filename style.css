@@ -177,6 +177,7 @@ body {
 
 .responsive-iframe {
     position: absolute;
+<<<<<<< HEAD
     top: 20px;
     padding-left: 50px;
     bottom: 40px;
@@ -263,6 +264,16 @@ body {
     animation-play-state: running;
 }
 
+=======
+    left: 600px;
+    top: 20px;
+    bottom: 40px;
+    width: 60%;
+    height: 100%;
+    border: none;
+}
+
+>>>>>>> ec07e03a0ac21425ffa9c7811c3d182e306893f3
 
 /*----------------------------
     Footer Part
@@ -392,8 +403,13 @@ highlights For Phone
     .highlights-img img {
         width: 70%;
         height: 248px;
+<<<<<<< HEAD
         margin-top: 40px;
         padding-right: 110px;
+=======
+        margin-top: 30px;
+        padding-right: 130px;
+>>>>>>> ec07e03a0ac21425ffa9c7811c3d182e306893f3
         display: block;
     }
     .responsive-iframe {
@@ -513,7 +529,11 @@ Highlights Responsive For Tab and Ipad
     .highlights-img img {
         width: 450px;
         height: 300px;
+<<<<<<< HEAD
         margin-top: 00px;
+=======
+        margin-top: 30px;
+>>>>>>> ec07e03a0ac21425ffa9c7811c3d182e306893f3
         padding-right: 150px;
         display: block;
     }
